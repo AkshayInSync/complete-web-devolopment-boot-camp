@@ -1,0 +1,123 @@
+
+<!-- Analysis in tables in tables and difference between div and break
+table tag is used to create a table in html and tr is used to create total number of rows and th(table heading) and td(table data) and to give gaps vertically we use row span and for hozontak gaps we use coloum span.. DIV vs Break - break is used to break current line and start in a new line where as div is used to create a block of elements to modify within block-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time table info</title>
+    <!--here css is used to create a table so style tag is used tr=table rows(no of rows * no of coloums trace...)th= table heading(data written inside coloumns to make table content bold and represent headings td=table data written inside coloumns)  -->
+    <style>
+      table tr,
+      table td,
+      table th {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <!-- created a order list -->
+  <body>
+    <h2>Time table info</h2>
+    <ol list type="1">
+      <li>Mathematics</li>
+      <li>physics</li>
+      <li>social</li>
+      <li>english</li>
+    </ol>
+    <!-- created a table tag for creation of a table and we have th for table heading and td for table description and td row span =3 for skipping rows horixintally and td col span=3 for skipping coloums vertically -->
+    <h3>Time Table</h3>
+    <table>
+      <div>
+      <tr>
+        <th>
+          Day/Period
+          </th>
+        <th>
+          I <br> 9:30-10:20
+          </th>
+        <th>
+          II <br> 10:20-11:10
+        </th>
+        <th>
+          III <br>11:10-12:00
+        </th>
+        <th>
+          12:00-12:40
+        </th>
+        <th>
+          IV<br> 12:40-1:30
+        </th>
+        <th>
+          V<br>1:30-2:20
+        </th>
+        <th>
+          VI<br> 2:20-3:10
+
+        </th>
+        <th>
+          VII<br>3:10-4:00
+
+        </th>
+      </tr>
+    </div>
+    <div>
+      <tr>
+        <th>Monday</th>
+        <td>Eng</td>
+        <td>Mat</td>
+        <td>che</td>
+        <th rowspan="6">Lunch</th>
+        <td colspan="3">Lab</td>
+        <td>phy</td>
+      </tr>
+    </div>
+      <tr>
+      <th>Tuesday</th>
+      <td colspan="3">Lab</td>
+      <td>Eng</td>
+      <td>Che</td>
+      <td>Mat</td>
+      <td>Sports</td>
+      </tr>
+      <tr>
+        <th>Wednesday</th>
+        <td>Mat</td>
+        <td>Phy</td>
+        <td>Eng</td>
+        <td>che</td>
+        <td colspan="3">Library</td>
+      </tr>
+      <tr>
+<th>Thursady</th>
+<td>Phy</td>
+<td>Eng</td>
+<td>Che</td>
+<td colspan="3"> Lab</td>
+<td>Math</td>
+      </tr>
+      <tr>
+        <th>Friday</th>
+        <td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://en.wikipedia.org/wiki/Lab" target="_blank" ">Lab</a></td>
+        <td>Math</td>
+        <td>Che</td>
+        <td>English</td>
+        <td>Physics</td>
+
+      </tr>
+      <tr>
+        <th>Saturday</th>
+        <td>Eng</td>
+        <td>Che</td>
+        <td>mat</td>
+        <td colspan="3">Seminar</td>
+        <td>Sports</td>
+      </tr>
+      <tr>
+        <th colspan="9">Sunday is a holiday😜😒</th>
+      </tr>
+    </table>
+    <a href="./forms.html"target="_blank">click me to know about forms</a>
+  </body>
+</html>
